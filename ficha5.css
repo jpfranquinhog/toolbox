@@ -1,0 +1,13 @@
+.flex-container {
+    display: flex;
+    height: 500px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: lightcyan;
+}
+.flex-item{
+    height: 100px;
+    width: 100px;
+    background-color: orange;
+    margin: 10px;
+}

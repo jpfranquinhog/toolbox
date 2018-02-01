@@ -1,0 +1,62 @@
+div{
+    width: 500px;
+    height: 300px;
+    margin: 20px;
+    background-color: lightblue;
+    padding: 6px;
+    border: solid 5px black;
+    position: relative;
+}
+div div{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: lightgreen;
+}
+p{
+    margin-top: 0;
+    color: white;
+}
+.canto1{
+    top: 0;
+    left: 0;
+}
+.canto2{
+    top: 0;
+    right: 0;
+}
+.canto3{
+    bottom: 0;
+    left: 0;
+}
+body{
+    background-color: lightgrey
+}
+#inline article{
+    display: inline-block;
+    width: 30%;
+}
+#float article{
+    float: left;
+    width: 30%;
+}
+.limpar_float{
+    clear: both;
+}
+#flex{
+    display: flex;
+    justify-content: space-between;
+}
+#flex article{
+    flex: 1;
+}
+#grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+article{
+    padding: 10px;
+    background-color: white;
+    border: solid black 3px;
+    margin: 3px;
+}

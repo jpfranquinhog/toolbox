@@ -1,0 +1,53 @@
+@supports (display: grid) {
+    .gridwrapper {
+        height: 100vh;
+        width: 100%;
+        display: grid;
+        grid-gap: 1px;
+        grid-template-columns: 2fr 2fr 1fr;
+        grid-template-rows: 10rem 2.75rem 10rem auto 2.75rem;
+        grid-template-areas: "header header header" "nav nav nav" "foco foco links"
+        "ultimas agenda links" "footer footer footer";
+    }
+    .gridItems {
+        background-color: steelblue;
+    }
+    header {
+        grid-area: header;
+        background-image: url('http://www.uma.pt/portal/imagens/UMaBanner25.jpg');
+        background-size: cover;    
+    }
+    nav {
+        grid-area: nav;
+        display: grid;
+        grid-auto-flow: column;
+        align-content: space-evenly;
+    }
+    .LastItem {
+        margin-left: auto;
+    }
+    footer {
+        grid-area: footer;
+        display: grid;
+        grid-auto-flow: column;
+        align-content: space-between;
+        position: static;
+    }
+    .foco {
+        grid-area: foco;    
+    }
+    .ultimas {
+        grid-area: ultimas;
+        width: 100%;
+    }
+    .agenda {
+        grid-area: agenda;
+        width: 100%;
+    }
+    .links {
+        grid-area: links;
+        width: 100%;
+    }
+}
+   
+      
